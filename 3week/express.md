@@ -43,8 +43,7 @@ var path = require('path'); // node 기본 모듈인 path
 var app = express(); # express 생성 함수 호출
 
 // all environments
-app.set('port', process.env.PORT || 3000); // || 연산자는 process.env.PORT 가 NULL 값이라면 3000을, 값이 존재한다면 그값을 그대로 사용하도록 한다. 
-process 는 node 에 기본으로 있는 global object 라서 어디에서나 사용 가능하다. node 를 실행시킬때 PORT=3001 node app.js 실행 해주면 process.env.PORT 값이 3001이 된다. 그렇게 되는 이유는 노드가 알아서 그렇게 하기 때문! app.set 은 port 키값으로 해당 값을 저장하는것이다.
+app.set('port', process.env.PORT || 3000); // || 연산자는 process.env.PORT 가 NULL 값이라면 3000을, 값이 존재한다면 그값을 그대로 사용하도록 한다. process 는 node 에 기본으로 있는 global object 라서 어디에서나 사용 가능하다. node 를 실행시킬때 PORT=3001 node app.js 실행 해주면 process.env.PORT 값이 3001이 된다. 그렇게 되는 이유는 노드가 알아서 그렇게 하기 때문! app.set 은 port 키값으로 해당 값을 저장하는것이다.
 app.set('views', path.join(__dirname, 'views')); // views 키 값에 __dirname (현재 Root 디렉토리)/views 경로를 지정
 app.set('view engine', 'jade'); // 기본 view engine 을 jade 로 설정, html 파일을 표현할수 있는 여러 view engine 이 존재한다. ejb jade 등등
 // Express 에서 사용할 미들웨어들 정의
