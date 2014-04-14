@@ -4,7 +4,7 @@
     "description": "",
     "repository": {
         "type": "git",
-        "url": "git@github.com:Nexters/Node-Study.git"
+        "url": "https://github.com/Nexters/Node-Study"
     },
     "author": "Rangken <rangken@gmail.com>",
     "license": "Apache 2",

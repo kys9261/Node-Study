@@ -1,0 +1,469 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>Express | 넥스터즈 Node.js</title>
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="nexters">
+        <meta name="description" content="넥스터즈 Node.js 스터디 내용 정리 입니다. 모두 수정보완 할 수 있습니다.">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../3week/3rd_party.html" />
+        
+        
+        <link rel="prev" href="../3week/api.html" />
+        
+
+        <meta property="og:title" content="Express | 넥스터즈 Node.js">
+        <meta property="og:site_name" content="넥스터즈 Node.js">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/nexters">
+        <meta property="book:tag" content="GitBook">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+        
+        <link rel="stylesheet" href="../gitbook/style.css">
+        
+        
+    </head>
+    <body>
+        
+<div class="book" data-github="nexters/node-study" data-level="3.2" data-basepath=".." data-revision="1397457540332">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="https://github.com/nexters/node-study" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
+
+    <!-- Actions Right -->
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://github.com/nexters/node-study/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/nexters/node-study/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+
+
+    <!-- Title -->
+    <h1><a href="../" >넥스터즈 Node.js</a></h1>
+</div>
+
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        <li>
+            <a href="https://github.com/nexters" target="blank">About the author</a>
+        </li>
+        <li>
+            <a href="https://github.com/nexters/node-study/issues" target="blank">Questions and Issues</a>
+        </li>
+        <li>
+            <a href="https://github.com/nexters/node-study/edit/master/3week/express.md" target="blank">Edit and Contribute</a>
+        </li>
+        <li class="divider"></li>
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="1week/README.html">
+                
+                <a href="../1week/README.html">
+                    <i class="fa fa-check"></i> <b>1)</b> 1주 - Git, Sublime
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="1.1" data-path="1week/git.html">
+                            
+                            <a href="../1week/git.html">
+                                <i class="fa fa-check"></i> <b>1.1)</b> Git
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="1.2" data-path="1week/sublime.html">
+                            
+                            <a href="../1week/sublime.html">
+                                <i class="fa fa-check"></i> <b>1.2)</b> Sublime Text 3
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="1.3" data-path="1week/github.html">
+                            
+                            <a href="../1week/github.html">
+                                <i class="fa fa-check"></i> <b>1.3)</b> Github
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="2" data-path="2week/README.html">
+                
+                <a href="../2week/README.html">
+                    <i class="fa fa-check"></i> <b>2)</b> 2주 - Node 기본
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="2.1" data-path="2week/javascript.html">
+                            
+                            <a href="../2week/javascript.html">
+                                <i class="fa fa-check"></i> <b>2.1)</b> Javascript
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="2.2" data-path="2week/install.html">
+                            
+                            <a href="../2week/install.html">
+                                <i class="fa fa-check"></i> <b>2.2)</b> 설치
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="2.3" data-path="2week/nodejs.html">
+                            
+                            <a href="../2week/nodejs.html">
+                                <i class="fa fa-check"></i> <b>2.3)</b> 기본내용
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="2.4" data-path="2week/librarys.html">
+                            
+                            <a href="../2week/librarys.html">
+                                <i class="fa fa-check"></i> <b>2.4)</b> 라이브러리들
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="3" data-path="3week/README.html">
+                
+                <a href="../3week/README.html">
+                    <i class="fa fa-check"></i> <b>3)</b> 3주
+                </a>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="3.1" data-path="3week/api.html">
+                            
+                            <a href="../3week/api.html">
+                                <i class="fa fa-check"></i> <b>3.1)</b> API 작성
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="3.2" data-path="3week/express.html">
+                            
+                            <a href="../3week/express.html">
+                                <i class="fa fa-check"></i> <b>3.2)</b> Express
+                            </a>
+                            
+                        </li>
+                    
+                        <li  data-level="3.3" data-path="3week/3rd_party.html">
+                            
+                            <a href="../3week/3rd_party.html">
+                                <i class="fa fa-check"></i> <b>3.3)</b> Modules
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="4" >
+                
+                <span><b>4)</b> 4주</span>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="4.1" >
+                            
+                            <span><b>4.1)</b> 프론트 레이아웃 작성</span>
+                            
+                        </li>
+                    
+                        <li  data-level="4.2" >
+                            
+                            <span><b>4.2)</b> 블로그 프로토타입 버전 완성</span>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="5" >
+                
+                <span><b>5)</b> 5주</span>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="5.1" >
+                            
+                            <span><b>5.1)</b> mysql 설치</span>
+                            
+                        </li>
+                    
+                        <li  data-level="5.2" >
+                            
+                            <span><b>5.2)</b> Database Modeling</span>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li  data-level="6" >
+                
+                <span><b>6)</b> 6주</span>
+                
+                
+            </li>
+        
+            <li  data-level="7" >
+                
+                <span><b>7)</b> 7주</span>
+                
+                
+            </li>
+        
+            <li  data-level="8" >
+                
+                <span><b>8)</b> 8주</span>
+                
+                
+                <ul class="articles">
+                    
+                        <li  data-level="8.1" >
+                            
+                            <span><b>8.1)</b> 프로젝트 완료 및 배포</span>
+                            
+                        </li>
+                    
+                </ul>
+                
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body" tabindex="-1">
+        <div class="body-inner">
+            <div class="page-wrapper">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 92.3076923076923%;min-width: 84.61538461538461%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../1week/README.html" title="1주 - Git, Sublime" class="chapter done new-chapter" data-progress="1" style="left: 7.6923076923076925%;"></a>
+    
+        <a href="../1week/git.html" title="Git" class="chapter done " data-progress="1.1" style="left: 15.384615384615385%;"></a>
+    
+        <a href="../1week/sublime.html" title="Sublime Text 3" class="chapter done " data-progress="1.2" style="left: 23.076923076923077%;"></a>
+    
+        <a href="../1week/github.html" title="Github" class="chapter done " data-progress="1.3" style="left: 30.76923076923077%;"></a>
+    
+        <a href="../2week/README.html" title="2주 - Node 기본" class="chapter done new-chapter" data-progress="2" style="left: 38.46153846153846%;"></a>
+    
+        <a href="../2week/javascript.html" title="Javascript" class="chapter done " data-progress="2.1" style="left: 46.15384615384615%;"></a>
+    
+        <a href="../2week/install.html" title="설치" class="chapter done " data-progress="2.2" style="left: 53.84615384615385%;"></a>
+    
+        <a href="../2week/nodejs.html" title="기본내용" class="chapter done " data-progress="2.3" style="left: 61.53846153846154%;"></a>
+    
+        <a href="../2week/librarys.html" title="라이브러리들" class="chapter done " data-progress="2.4" style="left: 69.23076923076923%;"></a>
+    
+        <a href="../3week/README.html" title="3주" class="chapter done new-chapter" data-progress="3" style="left: 76.92307692307692%;"></a>
+    
+        <a href="../3week/api.html" title="API 작성" class="chapter done " data-progress="3.1" style="left: 84.61538461538461%;"></a>
+    
+        <a href="../3week/express.html" title="Express" class="chapter done " data-progress="3.2" style="left: 92.3076923076923%;"></a>
+    
+        <a href="../3week/3rd_party.html" title="Modules" class="chapter  " data-progress="3.3" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_15">
+                    
+                        <h1 id="express-">Express 작성</h1>
+<h3 id="-">소개</h3>
+<p>http 모듈만으로는 많은 기능을 가진 API 나 웹페이지를 만들기에는 부족하다. 파라메터를 파싱한다거나 쿠키나 세션을 사용한다거나 HTML 랜더링 엔진을 사용한다거나 하려면
+좀더 많은 기능이 필요하다. 이런 기능들을 가지고 있는 Node.js 용 웹 프레임 워크가 Express 이다.</p>
+<table>
+<thead>
+<tr>
+<th>언어</th>
+<th style="text-align:center">기본적인 웹프레임워크</th>
+<th style="text-align:center">좀더 많은 기능이있는 프레임워크</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ruby</td>
+<td style="text-align:center">Sintra</td>
+<td style="text-align:center">RubyOnRails</td>
+</tr>
+<tr>
+<td>Pyhton</td>
+<td style="text-align:center">Flask</td>
+<td style="text-align:center">Django</td>
+</tr>
+<tr>
+<td>Javascript</td>
+<td style="text-align:center">Node.js http</td>
+<td style="text-align:center">Express</td>
+</tr>
+</tbody>
+</table>
+<p>구지 비교를 했지만 정확한 분류는 아니다!
+너무나 많은 프레임 워크가 존재하므로 가장 많이 사용하는 프레임 워크 기준으로 공부하는게 좋다.</p>
+<h3 id="-">설치</h3>
+<p><code>npm install -g express</code></p>
+<h3 id="express-init">Express Init</h3>
+<p><code>express myproject</code>
+Express 용 Project 생성!</p>
+<p><code>npm install</code>
+해당 프로젝트에 종속 라이브러리들을 설치!</p>
+<p><code>node app.js</code>
+Express 서버 실행</p>
+<h3 id="app-js">app.js</h3>
+<pre><code class="lang-js"><span class="hljs-comment">/**
+ * Module dependencies.
+ */</span>
+
+<span class="hljs-comment">// 사용할 라이브러리들을 포함 시킨다.</span>
+<span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>); <span class="hljs-comment">// 우리가 사용할 express 엔진 </span>
+<span class="hljs-keyword">var</span> routes = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./routes'</span>); <span class="hljs-comment">// express 에서 기본 생성해주는 라우팅 해당 파일을 통해 여러 url 들을 라우팅한다.</span>
+<span class="hljs-keyword">var</span> user = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./routes/user'</span>); <span class="hljs-comment">// User 관련 라우팅</span>
+<span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>); <span class="hljs-comment">// node 기본 모듈인 http</span>
+<span class="hljs-keyword">var</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>); <span class="hljs-comment">// node 기본 모듈인 path</span>
+
+<span class="hljs-keyword">var</span> app = express(); # express 생성 함수 호출
+
+<span class="hljs-comment">// all environments</span>
+app.set(<span class="hljs-string">'port'</span>, process.env.PORT || <span class="hljs-number">3000</span>); <span class="hljs-comment">// || 연산자는 process.env.PORT 가 NULL 값이라면 3000을, 값이 존재한다면 그값을 그대로 사용하도록 한다. </span>
+process 는 node 에 기본으로 있는 global object 라서 어디에서나 사용 가능하다. node 를 실행시킬때 PORT=<span class="hljs-number">3001</span> node app.js 실행 해주면 process.env.PORT 값이 <span class="hljs-number">3001</span>이 된다. 그렇게 되는 이유는 노드가 알아서 그렇게 하기 때문! app.set 은 port 키값으로 해당 값을 저장하는것이다.
+app.set(<span class="hljs-string">'views'</span>, path.join(__dirname, <span class="hljs-string">'views'</span>)); <span class="hljs-comment">// views 키 값에 __dirname (현재 Root 디렉토리)/views 경로를 지정</span>
+app.set(<span class="hljs-string">'view engine'</span>, <span class="hljs-string">'jade'</span>); <span class="hljs-comment">// 기본 view engine 을 jade 로 설정, html 파일을 표현할수 있는 여러 view engine 이 존재한다. ejb jade 등등</span>
+<span class="hljs-comment">// Express 에서 사용할 미들웨어들 정의</span>
+app.use(express.favicon()); <span class="hljs-comment">// favicon 미들웨어 ( 웹브라우져 주소창에 보이는 작은 이미지)</span>
+app.use(express.logger(<span class="hljs-string">'dev'</span>)); <span class="hljs-comment">// express 에 log level 을 dev 로 설정 ( dev 로 하면 좀더 많은 로그들을 출력함)</span>
+app.use(express.json()); <span class="hljs-comment">// json 을 알아서 파싱함 </span>
+app.use(express.urlencoded()); <span class="hljs-comment">// url 을 인코딩함</span>
+app.use(express.methodOverride()); <span class="hljs-comment">// methodOverride 기능 ( 웹 브라우져에서 PUT PATCH 는 지원하지 않으므로 해당 기능을 지원하기 위해 _method 변수를 사용 - 몰라도 됨)</span>
+app.use(app.router); <span class="hljs-comment">// 유저가 정의한 라우팅 사용</span>
+app.use(express.static(path.join(__dirname, <span class="hljs-string">'public'</span>))); <span class="hljs-comment">// static file ( 이미지 동영상 css js) 등을 서비스</span>
+
+<span class="hljs-comment">// development only</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-string">'development'</span> == app.get(<span class="hljs-string">'env'</span>)) { <span class="hljs-comment">// 개발 버젼으로 서버가 돌아가고 있다면 (NODE_ENV=development node app.js 로 실행하면! - development 가 기본)</span>
+  app.use(express.errorHandler());  <span class="hljs-comment">// express 의 errorHandler 를 사용한다.</span>
+}
+
+app.get(<span class="hljs-string">'/'</span>, routes.index); <span class="hljs-comment">// http://127.0.0.1 로 요청이 들어오면 routes.index 함수로 보낸다</span>
+app.get(<span class="hljs-string">'/users'</span>, user.list); <span class="hljs-comment">// http://127.0.0.1/users 로 요청이 오면 user.list 함수로 보낸다.</span>
+
+http.createServer(app).listen(app.get(<span class="hljs-string">'port'</span>), <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span> <span class="hljs-comment">// 서버 생성 하고 listen 이벤트 생성</span>
+  console.log(<span class="hljs-string">'Express server listening on port '</span> + app.get(<span class="hljs-string">'port'</span>));
+});
+</code></pre>
+<h3 id="-">미들웨어</h3>
+<p>미들웨어란 웹 프레임워크와 나의 프로그램과 사이에 존재하는 프로그램이라고 생각하면된다.
+실제 웹 프레임 워크에 있는 모든 기능을 사용하지는 않는다. 모바일용 API 를 만든다면 해당 웹 프레임워크에 쿠키나 MethodOverride 등등 많은 기능을 사용하지 않는다.
+해당 기능을 제공하는 미들웨어를 제거해서 좀더 가볍고 빠른 서버를 만드는게 가능하다!
+(사용하지 않는 기능이 있으면 불필요하게 특정 상황을 체크한다거나 HTTP 해더에 불필요한 정보를 포함한다거나 한다!)
+Express 에서 미들웨어에는 순서가 중요하다!</p>
+<p>Node.js 기본 프로젝트를 실행시킨후 웹브라우져로 접속하면 요청이 두번들어오는것을 알수있다.</p>
+<blockquote>
+<p><a href="http://127.0.0.1" target="_blank">http://127.0.0.1</a></p>
+<p><a href="http://127.0.0.1/favicon" target="_blank">http://127.0.0.1/favicon</a> // 브라우져가 해당 웹싸이트에 favicon 을 찾기위해 추가적인 요청을 진행한다.</p>
+</blockquote>
+<p>맨위에 <code>app.use(express.favicon());</code> favicon 미들웨어를 사용하면
+favicon 요청은 해당 미들웨어에서 처리 되고 아래로 추가적인 요청이 들어가지 않는다.
+favicon 을 서비스하기 위해 구지 json urlencoded 미들웨어를 사용할 이유가 없다!</p>
+<p>추가적으로 앱 API 서버를 만든다면 구지 favicon methodOverride 기능은 필요하지 않다!
+즉 삭제해도 좋다!</p>
+<p>미들웨어를 사용하면 추가적인 기능을 추가하거나 필요없는 기능을 쉽게 뺄수있어좋다! 다른 웹 프레임 워크에서 미들웨어 개념이 있지만 Express 만큼 유연하지 못하다! 그래서 Express 가 짱임!</p>
+<p>추가적으로 나만의 미들웨어를 사용 해 볼 수 있다.</p>
+<pre><code class="lang-js">app.use(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(req,res)</span>{</span>
+  console.log(<span class="hljs-string">"My MiddleWare"</span>);
+});
+</code></pre>
+<p>위에 내용울 <code>app.router</code> 아래에 두면 My middleware 로그가 남지 남지 않는다.
+즉 웹브라우져의 요청은 app.route 에서 처리되고 아래로 내려가지 않는다!
+만악에 <a href="http://127.0.0.1/images/test.png" target="_blank">http://127.0.0.1/images/test.png</a> 로 접속한다면 로그는 남게 될것이다. image 파일을 처리하기 위해서는 express.static 미들웨어 까지 내려가야 하기 때문이다!</p>
+<p>자세한 내용은 뒤에 추가 설명해주세요~</p>
+<h3 id="-">라우팅 처리</h3>
+<blockquote>
+<p>정리할 사람~</p>
+</blockquote>
+<h3 id="exports">Exports</h3>
+<blockquote>
+<p>정리할 사람~</p>
+</blockquote>
+<h3 id="reference">Reference</h3>
+<p><a href="http://firejune.io/express/" target="_blank">Express Doc</a> 한글로 되어있는 Document</p>
+<blockquote>
+<p>추가적으로 궁금한 사항이나 정리할 내용 좋은 자료가 있다면 아래에 정리해주세요 ~</p>
+</blockquote>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../3week/api.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../3week/3rd_party.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../gitbook/app.js"></script>
+        
+    </body>
+</html>
