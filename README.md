@@ -13,6 +13,7 @@ Nexters Node.js 스터디
 * ```npm install -g gitbook``` # gitbook 설치 (nodejs 설치 되어있어야 npm 설치가 됩니다!)
 * ```gitbook serve -g git@github.com:Nexters/Node-Study.git``` # 로컬로 gitbook 테스트 하기
 * ```grunt publish``` # gh-pages 깃헙 페이지에 올리기
+* ```git push origin master``` # 깃헙 master 브랜치로 올리기 - 다른 사람작성한것을 공유
 
 ### 페이지 작성시 도움되는 내용
 * [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 페이지 작성을 위한 Markdown 그냥 해당 페이지 내용을 보고 대충 따라해도 된다. 따로 공부 필요없당. 좀더 알고싶으면 방문해서 공부
